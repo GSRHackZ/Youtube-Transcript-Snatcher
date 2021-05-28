@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Youtube Transcript Snatcher
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Turn youtube videos into copyable text
 // @author       GSRHackZ
 // @match        https://www.youtube.com/*
@@ -46,8 +46,8 @@ function copy(){
 }
 
 setInterval(function(){
-    if(document.getElementsByClassName("style-scope ytd-transcript-renderer")[4]!==undefined&&displayed==false){
-        const footer=document.getElementsByClassName("style-scope ytd-transcript-renderer")[4];
+    if(document.getElementsByClassName("style-scope ytd-transcript-renderer")[3]!==undefined&&displayed==false){
+        const footer=document.getElementsByClassName("style-scope ytd-transcript-renderer")[3];
         const btn=document.createElement("button");
         btn.innerHTML="Snatch Transcript";
         btn.style=style;
